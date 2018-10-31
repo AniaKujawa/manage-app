@@ -13,7 +13,7 @@ const Item = styled.div`
 
 const Remover = styled.button`
   border-radius: 4px;
-  background: #232632;
+  background: hsl(201, 80%, 23%);
   border: 0px;
   width: 10%;
   color: white;
@@ -22,7 +22,7 @@ const Remover = styled.button`
 
 const Editor = styled.button`
   border-radius: 4px;
-  background: #232632;
+  background: hsl(201, 80%, 23%);
   border: 0px;
   width: 10%;
   color: white;
@@ -33,13 +33,14 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   border 2px solid #343744;
-  background: #232632;
+  background: hsl(201, 80%, 23%);
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 5px;
   witdh: 10px;
   cursor: pointer;
 `;
+// background: #232632;
 
 class ToDoItem extends Component {
   static defaultProps = {

@@ -1,19 +1,21 @@
 import React, { Component } from "react";
 import "../App.css";
 import ToDoItem from "./todoitem";
-import NewToDoTask from "./newtasktodo";
+import NewToDoTask from "../containers/newtasktodo";
 import styled from "styled-components";
 import { FaTrashAlt } from "react-icons/fa";
 
 const Container = styled.div`
-  background: #2b2e39;
+  background: #002233;
   margin-left: 20px;
-  width: 25%;
+  width: 30%;
   max-width: 600px;
   padding: 14px
   border-radius: 14px;
   margin-top: 14px;
 `;
+
+// background: #2b2e39;
 
 const Header = styled.h1`
   color: #fff;

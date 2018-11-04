@@ -49,14 +49,12 @@ const WeatherIcon = styled.div`
 const Container = styled.div`
   background: #cce6ff;
   color: #00264d;
-  position: absolute;
-  top: 0px;
-  right: 20px;
+  margin-top: 70px;
+  margin-left: 30%;
   width: 40%;
   max-width: 600px;
   padding: 14px
   border-radius: 20px;
-  margin-top: 14px;
 `;
 
 const WeatherView = props => {

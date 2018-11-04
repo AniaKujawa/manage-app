@@ -7,12 +7,12 @@ import { FaTrashAlt } from "react-icons/fa";
 
 const Container = styled.div`
   background: #002233;
-  margin-left: 20px;
+  margin-left: 270px;
   width: 30%;
   max-width: 600px;
   padding: 14px
   border-radius: 14px;
-  margin-top: 14px;
+  margin-top: 40px;
 `;
 
 // background: #2b2e39;
@@ -84,9 +84,14 @@ class ToDolist extends Component {
   };
 
   removeAll = () => {
-    const tasks = [];
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-    this.setState({ tasks: JSON.parse(localStorage.getItem("tasks")) });
+    var removeConfirm = window.confirm(
+      "Do you really want to remove all task?"
+    );
+    if (removeConfirm == true) {
+      const tasks = [];
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+      this.setState({ tasks: JSON.parse(localStorage.getItem("tasks")) });
+    }
   };
 
   removeTask = task => {

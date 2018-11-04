@@ -1,8 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import Home from "./containers/Home";
+import { Router, Route } from "react-router-dom";
+import WeatherData from "./components/weatherdata";
+import createHistory from "history/createBrowserHistory";
+import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const history = createHistory();
+
+ReactDOM.render(<Home />, document.getElementById("root"));
 registerServiceWorker();

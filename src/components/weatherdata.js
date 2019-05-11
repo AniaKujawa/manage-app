@@ -30,7 +30,7 @@ class WeatherData extends Component {
     const APIKEY = "607b8fe43221a5926675804956acc2ce";
     const CITYNAME = city;
     const COUNTRYNAME = country;
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=${CITYNAME},${COUNTRYNAME}&units=metric&appid=${APIKEY}`;
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=${CITYNAME},${COUNTRYNAME}&units=metric&appid=${APIKEY}`;
     axios
       .get(URL)
       .then(response => {
@@ -74,7 +74,7 @@ class WeatherData extends Component {
       main,
       description
     } = this.state;
-    var iconurl = "http://openweathermap.org/img/w/" + this.state.icon + ".png";
+    var iconurl = "https://openweathermap.org/img/w/" + this.state.icon + ".png";
     if (!isLoaded) {
       return <div>Loading..</div>;
     } else {

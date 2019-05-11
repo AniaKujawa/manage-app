@@ -10,7 +10,7 @@ const Container = styled.div`
   margin-left: 270px;
   width: 30%;
   max-width: 600px;
-  padding: 14px
+  padding: 14px;
   border-radius: 14px;
   margin-top: 40px;
 `;
@@ -43,7 +43,7 @@ class ToDolist extends Component {
   constructor() {
     super();
     this.state = {
-      tasks: JSON.parse(localStorage.getItem("tasks")),
+      tasks: JSON.parse(localStorage.getItem("tasks")) || [],
       newTask: "",
       isEdit: 0
     };
